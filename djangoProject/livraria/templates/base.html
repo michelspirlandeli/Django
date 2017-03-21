@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+<h1>
+    {% block tituloPagina %}
+    {% endblock %}
+</h1>
+<hr>
+{% block content %}
+{% endblock %}
+</body>
+</html>
