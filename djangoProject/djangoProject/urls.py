@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.conf.urls import url
+from django.contrib import admin
+
+from django.conf.urls import url, include
+from livraria import urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^livros/', include('livraria.urls')),
 ]
+
+

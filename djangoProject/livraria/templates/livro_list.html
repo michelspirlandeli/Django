@@ -20,7 +20,7 @@ Listagem de livros
         </tr>
     </thead>
     <tbody>
-    {% for livro in list %}
+    {% for livro in lista %}
     <tr>
         <td>{{ livro.autor }}</td>
         <td>{{ livro.titulo }}</td>
@@ -30,8 +30,8 @@ Listagem de livros
     {% endfor %}
     </tbody>
 </table>
-<a href="#">
-    <button type="submit" class="btn btn_primary">
+<a href="{% url 'livro_new' %}">
+    <button type="submit" class="btn btn-primary">
         Cadastrar
     </button>
 </a>
